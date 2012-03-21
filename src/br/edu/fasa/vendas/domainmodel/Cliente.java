@@ -25,8 +25,9 @@ public class Cliente {
         this.pkCod = pkCod;
     }
     
-    public void testaGit(){
-        
+    public void testaGit(){    
+        int a;
+        int b;
     }
 
     /**
