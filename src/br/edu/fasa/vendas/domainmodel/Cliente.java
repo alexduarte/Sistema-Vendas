@@ -24,6 +24,10 @@ public class Cliente {
     public void setPkCod(int pkCod) {
         this.pkCod = pkCod;
     }
+    
+    public void testaGit(){
+        
+    }
 
     /**
      * @return the nome
