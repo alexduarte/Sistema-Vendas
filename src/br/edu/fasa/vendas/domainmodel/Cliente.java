@@ -28,6 +28,7 @@ public class Cliente {
     public void testaGit(){    
         int a;
         int b;
+        int c;
     }
 
     /**
