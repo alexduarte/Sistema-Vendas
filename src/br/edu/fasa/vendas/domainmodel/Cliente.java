@@ -4,32 +4,30 @@
  */
 package br.edu.fasa.vendas.domainmodel;
 
+import javax.persistence.*;
+
 /**
  *
  * @author Alexsander Duarte Pimenta
  */
+@Entity
+@Table(name="clientes")
 public class Cliente {
     
-    private int pkCod;
-    private String nome;
+   @Id
+   @GeneratedValue(strategy = GenerationType.AUTO)
+   @Column(name="pk_cod")
+   private int cod;
+    
+   @Column(name="nome")
+   private String nome;
 
     
-    public int getPkCod() {
-        return pkCod;
+    public int getCod() {
+        return cod;
     }
 
-    /**
-     * @param pkCod the pkCod to set
-     */
-    public void setPkCod(int pkCod) {
-        this.pkCod = pkCod;
-    }
-    
-    public void testaGit(){    
-        int a;
-        int b;
-        int c;
-    }
+   
 
     /**
      * @return the nome
@@ -43,6 +41,13 @@ public class Cliente {
      */
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    /**
+     * @param cod the cod to set
+     */
+    public void setCod(int cod) {
+        this.cod = cod;
     }
     
     
