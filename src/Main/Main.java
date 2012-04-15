@@ -21,7 +21,7 @@ public class Main {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("VendasPU");
         EntityManager manager = factory.createEntityManager();
         Cliente cli = new Cliente();
-        cli.setNome("Alex");
+        cli.setNome("Alex2");
         EntityTransaction tran = manager.getTransaction();
         tran.begin();
         manager.persist(cli);
